@@ -53,16 +53,33 @@ iframe {
   transform: translate(-50%, -50%);
 }
 
-
 .top {
   top: 15%;
   text-align: right;
-
   color: blueviolet;
   font-weight: 500;
   -webkit-text-stroke-width: 2.3px;
   -webkit-text-stroke-color: whitesmoke;
 }
+
+.auto-resizable-iframe {
+    max-width: 560px;
+    margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0px;
+  }
+  
+  .auto-resizable-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
 
 // Marquee divs
 .marquee {
@@ -201,6 +218,7 @@ a.songselect {
 .dragon-menu {
     color: #06004f;
     font-size: 16px;
+    text-align: center;
 }
 
 a.menu-item {
