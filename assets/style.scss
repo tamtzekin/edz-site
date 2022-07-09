@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
+  background: aliceblue;
 }
 
 div, iframe {
@@ -288,7 +289,7 @@ input {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: whitesmoke;
+	background: aliceblue;
 }
 
 .overlay label{
@@ -298,9 +299,9 @@ input {
 	right: 20px;
 	top: 20px;
 	background: url('https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
-  background-color: red;
+    background: url('cross_blue.png');
 	z-index: 100;
-  cursor: crosshair;
+    cursor: crosshair;
 }
 
 .overlay nav {
