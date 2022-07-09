@@ -210,9 +210,7 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 	 position: absolute;
 	 right: 20px;
 	 top: 20px;
-	 background: url('
-	x.svg'
-	);
+	 background: url('x.svg');
 	 z-index: 100;
 	 cursor: crosshair;
 }
