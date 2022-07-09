@@ -284,22 +284,21 @@ input {
 }
 
 .overlay {
+	background: aliceblue;
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: aliceblue;
 }
 
-.overlay label{
-	width: 58px;
+.overlay label {
+	width: 116px;
 	height: 58px;
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	background: url('https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
-    background: url('cross_blue.png');
+    background: url('x.svg');
 	z-index: 100;
     cursor: crosshair;
 }
@@ -333,11 +332,11 @@ input {
 	font-weight: 300;
 	display: block;
 	color: white;
-  text-decoration:none;
+    text-decoration:none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-  font-family: 'NotCourierSans';
-  text-transform:uppercase;
+    font-family: 'NotCourierSans';
+    text-transform:uppercase;
 }
 
 .overlay ul li a:hover,

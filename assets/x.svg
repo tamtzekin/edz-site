@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 58" width="116" height="58">
+	<title>x_big-svg</title>
+	<style>
+		.s0 { fill: #000000;stroke: #000000;stroke-width: 1.2 } 
+		.s1 { fill: #63d55a } 
+	</style>
+	<path id="a" class="s0" d="m122 61.9l-128.3-66.3"/>
+	<path id="b" class="s1" d="m-5.6 61.9l129.7-66.3"/>
+	<path id="b" class="s0" d="m-5.8 62.2l129.7-66.4"/>
+</svg>
