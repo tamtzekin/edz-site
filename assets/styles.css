@@ -1,0 +1,287 @@
+@import url('
+https://fonts.googleapis.com/css?family=PT+Sans:400,700'
+);
+ * *::before, *::after {
+	 box-sizing: inherit;
+}
+ html {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: '
+	PT Sans'
+	, sans-serif;
+	 background: aliceblue;
+}
+ div, iframe {
+	 margin: 0 auto;
+}
+ iframe {
+	 display: block;
+}
+ .lyrics {
+	 color: blueviolet;
+	 font-weight: 500;
+	 -webkit-text-stroke-width: 2.3px;
+	 -webkit-text-stroke-color: whitesmoke;
+}
+ .vimeo-wrapper {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -1;
+	 pointer-events: none;
+	 overflow: hidden;
+}
+ .vimeo-wrapper iframe {
+	 width: 100vw;
+	 height: 56.25vw;
+	/* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+	 min-height: 100vh;
+	 min-width: 177.77vh;
+	/* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .top {
+	 top: 15%;
+	 text-align: right;
+	 color: blueviolet;
+	 font-weight: 500;
+	 -webkit-text-stroke-width: 2.3px;
+	 -webkit-text-stroke-color: whitesmoke;
+}
+ .auto-resizable-iframe {
+	 max-width: 560px;
+	 margin: 0px auto;
+}
+ .auto-resizable-iframe >
+ div {
+	 position: relative;
+	 padding-bottom: 75%;
+	 height: 0px;
+}
+ .auto-resizable-iframe iframe {
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 width: 100%;
+	 height: 100%;
+}
+ .marquee {
+	 height: 25px;
+	 width: 420px;
+	 position: relative;
+}
+ .marquee div {
+	 display: block;
+	 width: 100%;
+	 position: fixed;
+	 bottom: 15%;
+	 animation: marquee 80s linear infinite;
+}
+ .marquee span {
+	 float: left;
+	 width: 50%;
+	 font-size: 70px;
+}
+ @keyframes marquee {
+	 0% {
+		 left: 0;
+	}
+	 100% {
+		 left: -100%;
+	}
+}
+ .marquee:hover div {
+	 -webkit-animation-play-state: paused;
+	/* Safari 4.0 - 8.0 */
+	 animation-play-state: paused;
+}
+ div#playtext {
+	 color: red;
+}
+ .transition, .btn {
+	 transition: all 0.1s ease;
+}
+ .btn {
+	 position: fixed;
+	 display: inline-block;
+	 margin: 1em;
+	 padding: 0.5em 0.8em;
+	 border: 0;
+	 border-radius: 15px;
+	 border-style: dashed;
+	 text-align: center;
+	 white-space: nowrap;
+	 cursor: pointer;
+	 font-size: 32px;
+	 bottom: 5%;
+}
+ .btn:hover {
+	 box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+ .btn:active {
+	 transform: translateY(1px);
+	 box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+ .btn:focus {
+	 outline: none;
+}
+ .btn--greenbtn {
+	 background-color: transparent;
+	 border: 1px solid #739600;
+	 color: #739600;
+}
+/*Tracklist styles*/
+ .tracklist {
+	 font-size: 14px;
+	 text-align: center;
+}
+ a.songselect {
+	 text-decoration: none;
+	 color: #d94d99;
+}
+ .credits {
+	 font-size: 11px;
+	 text-align: center;
+}
+ .icons {
+	 width: 10px;
+}
+ .dragon-menu {
+	 color: #06004f;
+	 font-size: 16px;
+	 text-align: center;
+}
+ a.menu-item {
+	 color: red;
+}
+ a.menu-item:hover {
+	 font-size: 16px;
+}
+ .lower {
+	 width: 58px;
+	 opacity: 0.8;
+	 color: black;
+}
+ .lower:hover {
+	 background: black;
+	 color: white;
+}
+ input {
+	 display: none;
+}
+ .lower label {
+	 font-family: '
+	NotCourierSans'
+	;
+	 text-transform: uppercase;
+	 font-size: 40px;
+	 text-align: center;
+}
+ .lower label:hover {
+	 cursor: crosshair;
+}
+ .menu-icon {
+	 width: 58px;
+	 height: 58px;
+	 position: absolute;
+	 top: 20px;
+}
+ .svg:hover {
+	 fill: blue;
+}
+ .overlay {
+	 background: aliceblue;
+	 position: fixed;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+}
+ .overlay label {
+	 width: 116px;
+	 height: 58px;
+	 position: absolute;
+	 right: 20px;
+	 top: 20px;
+	 background: url('
+	x.svg'
+	);
+	 z-index: 100;
+	 cursor: crosshair;
+}
+ .overlay nav {
+	 text-align: center;
+	 position: relative;
+	 top: 50%;
+	 height: 100%;
+	 -webkit-transform: translateY(-50%);
+	 transform: translateY(-50%);
+}
+ .overlay ul {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0 auto;
+	 display: inline-block;
+	 height: 100%;
+	 position: relative;
+}
+ .overlay ul li {
+	 display: block;
+	 height: 20%;
+	 height: calc(100% / 5);
+	 min-height: 54px;
+}
+ .overlay ul li a {
+	 font-weight: 300;
+	 display: block;
+	 color: white;
+	 text-decoration: none;
+	 -webkit-transition: color 0.2s;
+	 transition: color 0.2s;
+	 font-family: '
+	NotCourierSans'
+	;
+	 text-transform: uppercase;
+}
+ .overlay ul li a:hover, .overlay ul li a:focus {
+	 color: #849368;
+}
+ .lower ~ .overlay-hugeinc {
+	 opacity: 0;
+	 visibility: hidden;
+	 -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	 transition: opacity 0.5s, visibility 0s 0.5s;
+}
+ #op:checked ~ .overlay-hugeinc {
+	 opacity: 1;
+	 visibility: visible;
+	 -webkit-transition: opacity 0.5s;
+	 transition: opacity 0.5s;
+}
+ .overlay-hugeinc nav {
+	 -moz-perspective: 300px;
+}
+ .overlay-hugeinc nav ul {
+	 opacity: 0.4;
+	 -webkit-transform: translateY(-25%) rotateX(35deg);
+	 transform: translateY(-25%) rotateX(35deg);
+	 -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	 transition: transform 0.5s, opacity 0.5s;
+}
+ #op:checked ~ .overlay-hugeinc nav ul {
+	 opacity: 1;
+	 -webkit-transform: rotateX(0deg);
+	 transform: rotateX(0deg);
+}
+ #op:not(:checked) ~ .overlay-hugeinc nav ul {
+	 -webkit-transform: translateY(25%) rotateX(-35deg);
+	 transform: translateY(25%) rotateX(-35deg);
+}
+ 
