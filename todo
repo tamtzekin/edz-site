@@ -1,7 +1,10 @@
 TODO:
-- menu buttons hidden as glyphs inside ascii
-- randomly display a new page in 'main' pane on each load of index.html
+- change svgs to code so they can be filled
 
+
+LONGLIST:
+- on discogs: show images on hover using data-* https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+- early windows icons HOT! NEW!
 
 Refs
 Full screen vid + transparent buttons https://young-luv.com/
