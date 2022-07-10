@@ -139,7 +139,7 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 }
 /*Tracklist styles*/
  .tracklist {
-	 font-size: 14px;
+	 font-size: 0.8em;
 	 text-align: center;
 }
  a.songselect {
@@ -147,7 +147,7 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 	 color: #d94d99;
 }
  .credits {
-	 font-size: 11px;
+	 font-size: 0.8em;
 	 text-align: center;
 }
  .icons {
@@ -170,11 +170,10 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 
 @media only screen and (max-width: 600px) {
 	.dragon-menu {
+		font-size: 10px;
 		margin-top: 30%;
 		margin-left: -20%;
-		font-size: 10px;
 	}
-
 }
 
 .container {
