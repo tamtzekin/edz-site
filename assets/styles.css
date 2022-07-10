@@ -153,11 +153,36 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
  .icons {
 	 width: 10px;
 }
+
+.intro-text {
+	position: absolute;
+	bottom: 200px;
+	width: 100%
+}
+
+/* Dragon overlay menu */
  .dragon-menu {
 	 color: #06004f;
 	 font-size: 16px;
 	 text-align: center;
+	 margin: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+	.dragon-menu {
+		margin-top: 30%;
+		margin-left: -20%;
+		font-size: 10px;
+	}
+
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 50em;
+	box-sizing: border-box;
+}
+
  a.menu-item {
 	 color: red;
 }
