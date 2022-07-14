@@ -182,33 +182,43 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 	box-sizing: border-box;
 }
 
- a.menu-item {
-	 color: red;
-}
- a.menu-item:hover {
-	 font-size: 16px;
-}
- .lower {
-	 width: 58px;
-	 opacity: 0.8;
-	 color: black;
-}
- .lower:hover {
-	 background: black;
-	 color: red;
+a.menu-item {
+	color: red;
+	font-size: 22px;
+	text-decoration: none;
 }
 
- input {
-	 display: none;
+a.menu-item:hover:before {
+	content: attr(data-hover);	
+	font-size: 16px;
 }
- .lower label {
-	 font-family: '
-	NotCourierSans'
-	;
+
+ a.menu-item:hover {
+	font-size: 0px;
+}
+
+ .lower {
+	width: 58px;
+	opacity: 0.8;
+	color: black;
+}
+
+.lower:hover {
+	background: black;
+	color: red;
+}
+
+input {
+	display: none;
+}
+
+.lower label {
+	font-family: 'NotCourierSans';
 	 text-transform: uppercase;
 	 font-size: 40px;
 	 text-align: center;
 }
+
  .lower label:hover {
 	 cursor: crosshair;
 }
