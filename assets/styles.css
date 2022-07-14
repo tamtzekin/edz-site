@@ -170,13 +170,13 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 
 @media only screen and (max-width: 600px) {
 	.dragon-menu {
-		font-size: 6px;
-		margin-top: 18%;
+		font-size: 7px;
+		margin-top: 20%;
 		margin-left: -3%;
 	}
 
-	.menu-item {
-		font-size: 12px;
+	a.menu-item {
+		font-size: 11px;
 	}
 }
 
@@ -188,7 +188,7 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 
 a.menu-item {
 	color: red;
-	font-size: 22px;
+	font-size: 20px;
 	text-decoration: none;
 }
 
