@@ -195,8 +195,9 @@ https://fonts.googleapis.com/css?family=PT+Sans:400,700'
 }
  .lower:hover {
 	 background: black;
-	 color: white;
+	 color: red;
 }
+
  input {
 	 display: none;
 }
